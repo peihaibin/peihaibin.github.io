@@ -175,8 +175,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1:安装Hexo<br>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。<br>2:发现问题<br>当上传时，发现报错：“Permission denied (publickey)”<br>3:解决办法<br>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。<br>4:开启ssh-agent服务<br>val <code>ssh-agent -s</code><br>5:添加key到ssh-agent：<br>ssh-add ~/.ssh/keyfilename<br>6:验证是否正常<br>ssh -T git@github.com</p>
-
+        <h4 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1:安装Hexo"></a>1:安装Hexo</h4><p>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。</p>
+<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”</p>
+<h4 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3:解决办法"></a>3:解决办法</h4><p>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。</p>
+<h4 id="4-开启ssh-agent服务"><a href="#4-开启ssh-agent服务" class="headerlink" title="4:开启ssh-agent服务"></a>4:开启ssh-agent服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val `ssh-agent -s`</div></pre></td></tr></table></figure>
+<h4 id="5-添加key到ssh-agent："><a href="#5-添加key到ssh-agent：" class="headerlink" title="5:添加key到ssh-agent："></a>5:添加key到ssh-agent：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/keyfilename</div></pre></td></tr></table></figure>
+<h4 id="6-验证是否正常"><a href="#6-验证是否正常" class="headerlink" title="6:验证是否正常"></a>6:验证是否正常</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
       
 
       

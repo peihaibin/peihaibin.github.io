@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
   <title>Setting up SSH for Git on Windows | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。2:发现问题当上传时，发现报错：“Permission denied (publickey)”3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。4:开启ssh-agent服务val ssh-agent -s5:添加key到ssh-agent：ssh-add ~/.ssh/keyfil">
+  <meta name="description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
 <meta name="keywords" content="git,publickey">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Setting up SSH for Git on Windows">
 <meta property="og:url" content="https://peihaibin.github.io/2017/09/22/Setting-up-SSH-for-Git-on-Windows/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。2:发现问题当上传时，发现报错：“Permission denied (publickey)”3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。4:开启ssh-agent服务val ssh-agent -s5:添加key到ssh-agent：ssh-add ~/.ssh/keyfil">
+<meta property="og:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-22T09:36:35.771Z">
+<meta property="og:updated_time" content="2017-09-22T09:56:25.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Setting up SSH for Git on Windows">
-<meta name="twitter:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。2:发现问题当上传时，发现报错：“Permission denied (publickey)”3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。4:开启ssh-agent服务val ssh-agent -s5:添加key到ssh-agent：ssh-add ~/.ssh/keyfil">
+<meta name="twitter:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -175,8 +175,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1:安装Hexo<br>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。<br>2:发现问题<br>当上传时，发现报错：“Permission denied (publickey)”<br>3:解决办法<br>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。<br>4:开启ssh-agent服务<br>val <code>ssh-agent -s</code><br>5:添加key到ssh-agent：<br>ssh-add ~/.ssh/keyfilename<br>6:验证是否正常<br>ssh -T git@github.com</p>
-
+        <h4 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1:安装Hexo"></a>1:安装Hexo</h4><p>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。</p>
+<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”</p>
+<h4 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3:解决办法"></a>3:解决办法</h4><p>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。</p>
+<h4 id="4-开启ssh-agent服务"><a href="#4-开启ssh-agent服务" class="headerlink" title="4:开启ssh-agent服务"></a>4:开启ssh-agent服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val `ssh-agent -s`</div></pre></td></tr></table></figure>
+<h4 id="5-添加key到ssh-agent："><a href="#5-添加key到ssh-agent：" class="headerlink" title="5:添加key到ssh-agent："></a>5:添加key到ssh-agent：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/keyfilename</div></pre></td></tr></table></figure>
+<h4 id="6-验证是否正常"><a href="#6-验证是否正常" class="headerlink" title="6:验证是否正常"></a>6:验证是否正常</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
       
 
       
