@@ -60,8 +60,6 @@
 	        
 				<li><a href="/allPages">所有文章</a></li>
 	        
-				<li><a href="/tags">随笔</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -114,8 +112,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -131,14 +127,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/allPages">所有文章</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
+					<li style="width: 50%"><a href="/allPages">所有文章</a></li>
 		        
 				</ul>
 			</nav>
@@ -154,6 +148,76 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/25/hello-world/" class="archive-article-date">
+  	<time datetime="2017-09-25T04:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br>
+        
+          <a class="article-more-a" href="/2017/09/25/hello-world/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/25/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
   
     <article id="post-Python-学习笔记-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -178,9 +242,7 @@
         <h3 id="Python-学习笔记-1"><a href="#Python-学习笔记-1" class="headerlink" title="Python 学习笔记 1"></a>Python 学习笔记 1</h3><h4 id="Python中可以把函数作为参数，则该函数被成为高阶函数。"><a href="#Python中可以把函数作为参数，则该函数被成为高阶函数。" class="headerlink" title="Python中可以把函数作为参数，则该函数被成为高阶函数。"></a>Python中可以把函数作为参数，则该函数被成为高阶函数。</h4><p>高阶函数中引入平方根函数的办法</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">import math</div><div class="line">from math import sqrt</div><div class="line"></div><div class="line">def add(x, y, f):</div><div class="line">    <span class="built_in">return</span> f(x) + f(y)</div><div class="line"></div><div class="line"><span class="built_in">print</span> add(25, 9, sqrt)</div></pre></td></tr></table></figure>
 <h4 id="python中map-函数"><a href="#python中map-函数" class="headerlink" title="python中map()函数"></a>python中map()函数</h4><p>map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。</p>
-<h5 id="利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："><a href="#利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：" class="headerlink" title="利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："></a>利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def format_name(s):</div><div class="line">    //<span class="built_in">return</span> s.capitalize()</div><div class="line">	 <span class="built_in">return</span> s[:1].uppper()+s[1:].lower()</div><div class="line">     </div><div class="line"><span class="built_in">print</span> map(format_name, [<span class="string">'adam'</span>, <span class="string">'LISA'</span>, <span class="string">'barT'</span>])</div></pre></td></tr></table></figure>
-<h4 id="python中reduce-函数"><a href="#python中reduce-函数" class="headerlink" title="python中reduce()函数"></a>python中reduce()函数</h4><p>reduce()函数也是Python内置的一个高阶函数。reduce()函数接收的参数和 map()类似，一个函数 f，一个list，但行为和 map()不同，reduce()传入的函数 f 必须接收两个参数，reduce()对list的每个元素反复调用函数f，并返回最终结果值。reduce()还可以接收第3个可选参数，作为计算的初始值</p>
-<h5 id="利用reduce-函数来求积"><a href="#利用reduce-函数来求积" class="headerlink" title="利用reduce()函数来求积"></a>利用reduce()函数来求积</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">def prod(x, y):</div><div class="line">    <span class="built_in">return</span> x*y</div><div class="line"></div><div class="line"><span class="built_in">print</span> reduce(prod, [2, 4, 5, 7, 12])</div></pre></td></tr></table></figure>
+<h5 id="利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："><a href="#利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：" class="headerlink" title="利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："></a>利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">def format_name(s):</div><div class="line">    //<span class="built_in">return</span> s.capitalize()</div><div class="line">	 <span class="built_in">return</span> s[:1].uppper()+s[1:].lower()</div><div class="line">     </div><div class="line"><span class="built_in">print</span> map(format_name, [<span class="string">'adam'</span>, <span class="string">'LISA'</span>, <span class="string">'barT'</span>])</div><div class="line">~~~   </div><div class="line">&lt;!-- more --&gt;</div><div class="line"><span class="comment">#### python中reduce()函数</span></div><div class="line">reduce()函数也是Python内置的一个高阶函数。reduce()函数接收的参数和 map()类似，一个函数 f，一个list，但行为和 map()不同，reduce()传入的函数 f 必须接收两个参数，reduce()对list的每个元素反复调用函数f，并返回最终结果值。reduce()还可以接收第3个可选参数，作为计算的初始值</div><div class="line"><span class="comment">##### 利用reduce()函数来求积</span></div><div class="line">~~~ bash</div><div class="line">def prod(x, y):</div><div class="line">    <span class="built_in">return</span> x*y</div><div class="line"></div><div class="line"><span class="built_in">print</span> reduce(prod, [2, 4, 5, 7, 12])</div></pre></td></tr></table></figure>
 <h4 id="python中filter-函数"><a href="#python中filter-函数" class="headerlink" title="python中filter()函数"></a>python中filter()函数</h4><p>filter()函数是 Python 内置的另一个有用的高阶函数，filter()函数接收一个函数 f 和一个list，这个函数 f 的作用是对每个元素进行判断，返回 True或 False，filter()根据判断结果自动过滤掉不符合条件的元素，返回由符合条件元素组成的新list。</p>
 <h5 id="利用filter-过滤出1-100中平方根是整数的数"><a href="#利用filter-过滤出1-100中平方根是整数的数" class="headerlink" title="利用filter()过滤出1~100中平方根是整数的数"></a>利用filter()过滤出1~100中平方根是整数的数</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">import math</div><div class="line">from math import sqrt</div><div class="line"></div><div class="line">def is_sqr(x):</div><div class="line">    <span class="built_in">return</span> sqrt(x)%1 == 0 </div><div class="line"></div><div class="line"><span class="built_in">print</span> filter(is_sqr, range(1, 101))</div></pre></td></tr></table></figure>
 <h4 id="python中自定义排序函数"><a href="#python中自定义排序函数" class="headerlink" title="python中自定义排序函数"></a>python中自定义排序函数</h4><p>Python内置的 sorted()函数可对list进行排序,sorted()也是一个高阶函数，它可以接收一个比较函数来实现自定义排序，比较函数的定义是，传入两个待比较的元素 x, y，如果 x 应该排在 y 的前面，返回 -1，如果 x 应该排在 y 的后面，返回 1。如果 x 和 y 相等，返回 0。</p>
@@ -265,11 +327,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1:安装Hexo"></a>1:安装Hexo</h4><p>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。</p>
-<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”</p>
-<h4 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3:解决办法"></a>3:解决办法</h4><p>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。</p>
-<h4 id="4-开启ssh-agent服务"><a href="#4-开启ssh-agent服务" class="headerlink" title="4:开启ssh-agent服务"></a>4:开启ssh-agent服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val `ssh-agent -s`</div></pre></td></tr></table></figure>
-<h4 id="5-添加key到ssh-agent："><a href="#5-添加key到ssh-agent：" class="headerlink" title="5:添加key到ssh-agent："></a>5:添加key到ssh-agent：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/keyfilename</div></pre></td></tr></table></figure>
-<h4 id="6-验证是否正常"><a href="#6-验证是否正常" class="headerlink" title="6:验证是否正常"></a>6:验证是否正常</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
+<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”<br>
+        
+          <a class="article-more-a" href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/#more">阅读全文 >></a>
+        
       
 
       
@@ -297,80 +358,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-<!-- 目录内容 -->
-             
-   <!-- 目录内容结束 -->
-   
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/22/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-22T05:44:53.284Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/22/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -488,15 +475,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">publickey</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
   <title>Setting up SSH for Git on Windows | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
+  <meta name="description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)”">
 <meta name="keywords" content="git,publickey">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Setting up SSH for Git on Windows">
 <meta property="og:url" content="https://peihaibin.github.io/2017/09/22/Setting-up-SSH-for-Git-on-Windows/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
+<meta property="og:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)”">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-22T09:56:25.085Z">
+<meta property="og:updated_time" content="2017-09-25T04:46:25.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Setting up SSH for Git on Windows">
-<meta name="twitter:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)” 3:解决办法应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。 4:开启ssh-agent服务1val `ssh-agent -s` 5:添加key到ssh-agent：1ssh-add ~/.ss">
+<meta name="twitter:description" content="1:安装Hexo当安装完成Hexo时，准备通过hexo d 上传个人博客到github。 2:发现问题当上传时，发现报错：“Permission denied (publickey)”">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -61,8 +61,6 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/allPages">所有文章</a></li>
-	        
-				<li><a href="/tags">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -116,8 +114,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -133,14 +129,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/allPages">所有文章</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
+					<li style="width: 50%"><a href="/allPages">所有文章</a></li>
 		        
 				</ul>
 			</nav>
@@ -176,9 +170,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1:安装Hexo"></a>1:安装Hexo</h4><p>当安装完成Hexo时，准备通过hexo d 上传个人博客到github。</p>
-<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”</p>
+<h4 id="2-发现问题"><a href="#2-发现问题" class="headerlink" title="2:发现问题"></a>2:发现问题</h4><p>当上传时，发现报错：“Permission denied (publickey)”<br><a id="more"></a></p>
 <h4 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3:解决办法"></a>3:解决办法</h4><p>应该是生成的sshkey没有引入到MinTTY，需要重新设置一下。</p>
-<h4 id="4-开启ssh-agent服务"><a href="#4-开启ssh-agent服务" class="headerlink" title="4:开启ssh-agent服务"></a>4:开启ssh-agent服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val `ssh-agent -s`</div></pre></td></tr></table></figure>
+<h4 id="4-开启ssh-agent服务"><a href="#4-开启ssh-agent服务" class="headerlink" title="4:开启ssh-agent服务"></a>4:开启ssh-agent服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">eval</span> `ssh-agent -s`</div></pre></td></tr></table></figure>
 <h4 id="5-添加key到ssh-agent："><a href="#5-添加key到ssh-agent：" class="headerlink" title="5:添加key到ssh-agent："></a>5:添加key到ssh-agent：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/keyfilename</div></pre></td></tr></table></figure>
 <h4 id="6-验证是否正常"><a href="#6-验证是否正常" class="headerlink" title="6:验证是否正常"></a>6:验证是否正常</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
       
@@ -308,11 +302,6 @@
     </a>
   
   
-    <a href="/2017/09/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
 </nav>
 
 
@@ -430,15 +419,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">publickey</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
