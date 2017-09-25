@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
-  <title>Tag: git | 个人博客</title>
+  <title>Python 学习笔记 3 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="https://peihaibin.github.io/tags/git/index.html">
+  <meta name="description" content="python之导入模块Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有init.py要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：1from math import pow, sin, log如果使用 from…import 导入 log 函">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 学习笔记 3">
+<meta property="og:url" content="https://peihaibin.github.io/2017/09/25/Python-学习笔记-3/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
+<meta property="og:description" content="python之导入模块Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有init.py要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：1from math import pow, sin, log如果使用 from…import 导入 log 函">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-25T09:40:43.871Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
-<meta name="twitter:description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
+<meta name="twitter:title" content="Python 学习笔记 3">
+<meta name="twitter:description" content="python之导入模块Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有init.py要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：1from math import pow, sin, log如果使用 from…import 导入 log 函">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -151,66 +153,197 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python-学习笔记-3" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/" class="archive-article-date">
-  	<time datetime="2017-09-22T09:27:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/">Setting up SSH for Git on Windows</a>
+    <h1 class="article-title" itemprop="name">
+      Python 学习笔记 3
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/09/25/Python-学习笔记-3/" class="archive-article-date">
+  	<time datetime="2017-09-25T08:57:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="python之导入模块"><a href="#python之导入模块" class="headerlink" title="python之导入模块"></a>python之导入模块</h4><p>Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有<font color="#ff0000"><strong>init</strong>.py</font><br>要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块<br>如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</div></pre></td></tr></table></figure><br>如果使用 <font color="#ff0000">from…import</font> 导入 log 函数，势必引起冲突。这时，可以给函数起个<font color="#ff0000">“别名”</font>来避免冲突：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</div><div class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h4 id="python中动态导入模块"><a href="#python中动态导入模块" class="headerlink" title="python中动态导入模块"></a>python中动态导入模块</h4><p>如果导入的模块不存在，Python解释器会报 ImportError 错误。<br>利用ImportError错误，我们经常在Python中动态导入模块：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">    ???</div><div class="line"><span class="keyword">except</span> ImportError:</div><div class="line">    ???</div><div class="line"></div></pre></td></tr></table></figure></p>
+<p><font color="#ff0000">try</font> 的作用是捕获错误，并在捕获到指定错误时执行 <font color="#ff0000">except</font> 语句。</p>
+<h4 id="python之使用future"><a href="#python之使用future" class="headerlink" title="python之使用future"></a>python之使用<strong>future</strong></h4><p>Python的新版本会引入新的功能，但是，实际上这些功能在上一个老版本中就已经存在了。要“试用”某一新的特性，就可以通过导入<strong>future</strong>模块的某些功能来实现。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> packagename</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">publickey</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/09/25/Python-学习笔记-3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/09/25/Python-学习笔记-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python 学习笔记 2</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
 
+  
 
+  
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
           </div>
         </div>
       </div>
@@ -231,9 +364,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
