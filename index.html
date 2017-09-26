@@ -19,8 +19,6 @@
 <meta name="twitter:title" content="个人博客">
 <meta name="twitter:description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
   
-    <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
-  
   
     <link rel="icon" href="/assets/img/favicon.ico">
   
@@ -34,6 +32,16 @@
   
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?f6b36ee54f27e978436d83985367c0ab";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 </head>
 
@@ -84,6 +92,8 @@
 		        
 					<a class="mail" target="_blank" href="mailto:pei_12@126.com" title="mail"><i class="icon-mail"></i></a>
 		        
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+		        
 			</div>
 		</nav>
 	</header>		
@@ -124,6 +134,8 @@
 						<a class="github" target="_blank" href="https://github.com/peihaibin" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:pei_12@126.com" title="mail"><i class="icon-mail"></i></a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 				</div>
 			</nav>
@@ -173,7 +185,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="python之导入模块"><a href="#python之导入模块" class="headerlink" title="python之导入模块"></a>python之导入模块</h4><p>Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有<font color="#ff0000"><strong>init</strong>.py</font><br>要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块<br>如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</div></pre></td></tr></table></figure><br>如果使用 <font color="#ff0000">from…import</font> 导入 log 函数，势必引起冲突。这时，可以给函数起个<font color="#ff0000">“别名”</font>来避免冲突：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</div><div class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></div></pre></td></tr></table></figure></p>
+        <!-- MarkdownTOC -->
+<ul>
+<li>python之导入模块</li>
+<li>python中动态导入模块</li>
+<li>python之使用<strong>future</strong></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h4 id="python之导入模块"><a href="#python之导入模块" class="headerlink" title="python之导入模块"></a>python之导入模块</h4><p>Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有<font color="#ff0000"><strong>init</strong>.py</font><br>要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块<br>如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</div></pre></td></tr></table></figure><br>如果使用 <font color="#ff0000">from…import</font> 导入 log 函数，势必引起冲突。这时，可以给函数起个<font color="#ff0000">“别名”</font>来避免冲突：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</div><div class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></div></pre></td></tr></table></figure></p>
         
           <a class="article-more-a" href="/2017/09/25/Python-学习笔记-3/#more">阅读全文 >></a>
         
@@ -302,76 +321,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/09/25/Python-学习笔记-2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-<!-- 目录内容 -->
-             
-   <!-- 目录内容结束 -->
-   
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/25/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-25T04:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-        
-          <a class="article-more-a" href="/2017/09/25/hello-world/#more">阅读全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/25/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -549,6 +498,76 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/21/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/21/hello-world/" class="archive-article-date">
+  	<time datetime="2017-09-21T04:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+        
+          <a class="article-more-a" href="/2017/09/21/hello-world/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/21/hello-world/">展开全文 >></a>
         </p>
       
 
