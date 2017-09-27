@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
-  <title>Python 学习笔记 1 | 个人博客</title>
+  <title>Python 学习笔记 4 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python中可以把函数作为参数，则该函数被成为高阶函数。高阶函数中引入平方根函数的办法 1234567import mathfrom math import sqrtdef add(x, y, f):    return f(x) + f(y)print add(25, 9, sqrt) python中map()函数map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list">
+  <meta name="description" content="python中初始化实例属性虽然我们可以自由地给一个实例绑定各种属性，但是，现实世界中，一种类型的实例应该拥有相同名字的属性。特殊的init() 方法：当创建实例时，init()方法被自动调用，我们就能在此为每个实例都统一加上属性。 init()  方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别。相应地，创建实例时，就必须要提">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python 学习笔记 1">
-<meta property="og:url" content="https://peihaibin.github.io/2017/09/25/Python-学习笔记-1/index.html">
+<meta property="og:title" content="Python 学习笔记 4">
+<meta property="og:url" content="https://peihaibin.github.io/2017/09/27/Python-学习笔记-4/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="Python中可以把函数作为参数，则该函数被成为高阶函数。高阶函数中引入平方根函数的办法 1234567import mathfrom math import sqrtdef add(x, y, f):    return f(x) + f(y)print add(25, 9, sqrt) python中map()函数map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list">
+<meta property="og:description" content="python中初始化实例属性虽然我们可以自由地给一个实例绑定各种属性，但是，现实世界中，一种类型的实例应该拥有相同名字的属性。特殊的init() 方法：当创建实例时，init()方法被自动调用，我们就能在此为每个实例都统一加上属性。 init()  方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别。相应地，创建实例时，就必须要提">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-25T09:13:40.433Z">
+<meta property="og:updated_time" content="2017-09-27T08:29:51.101Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python 学习笔记 1">
-<meta name="twitter:description" content="Python中可以把函数作为参数，则该函数被成为高阶函数。高阶函数中引入平方根函数的办法 1234567import mathfrom math import sqrtdef add(x, y, f):    return f(x) + f(y)print add(25, 9, sqrt) python中map()函数map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list">
+<meta name="twitter:title" content="Python 学习笔记 4">
+<meta name="twitter:description" content="python中初始化实例属性虽然我们可以自由地给一个实例绑定各种属性，但是，现实世界中，一种类型的实例应该拥有相同名字的属性。特殊的init() 方法：当创建实例时，init()方法被自动调用，我们就能在此为每个实例都统一加上属性。 init()  方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别。相应地，创建实例时，就必须要提">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -165,42 +165,38 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python-学习笔记-1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python-学习笔记-4" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python 学习笔记 1
+      Python 学习笔记 4
     </h1>
   
 
         
-        <a href="/2017/09/25/Python-学习笔记-1/" class="archive-article-date">
-  	<time datetime="2017-09-25T02:16:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+        <a href="/2017/09/27/Python-学习笔记-4/" class="archive-article-date">
+  	<time datetime="2017-09-27T07:44:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="Python中可以把函数作为参数，则该函数被成为高阶函数。"><a href="#Python中可以把函数作为参数，则该函数被成为高阶函数。" class="headerlink" title="Python中可以把函数作为参数，则该函数被成为高阶函数。"></a>Python中可以把函数作为参数，则该函数被成为高阶函数。</h4><p>高阶函数中引入平方根函数的办法</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">import math</div><div class="line">from math import sqrt</div><div class="line"></div><div class="line">def add(x, y, f):</div><div class="line">    <span class="built_in">return</span> f(x) + f(y)</div><div class="line"></div><div class="line"><span class="built_in">print</span> add(25, 9, sqrt)</div></pre></td></tr></table></figure>
-<h4 id="python中map-函数"><a href="#python中map-函数" class="headerlink" title="python中map()函数"></a>python中map()函数</h4><p>map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。</p>
-<h5 id="利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："><a href="#利用map-函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：" class="headerlink" title="利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list："></a>利用map()函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def format_name(s):</div><div class="line">    //<span class="built_in">return</span> s.capitalize()</div><div class="line">	 <span class="built_in">return</span> s[:1].uppper()+s[1:].lower()</div><div class="line">     </div><div class="line"><span class="built_in">print</span> map(format_name, [<span class="string">'adam'</span>, <span class="string">'LISA'</span>, <span class="string">'barT'</span>])</div></pre></td></tr></table></figure>
+        <h4 id="python中初始化实例属性"><a href="#python中初始化实例属性" class="headerlink" title="python中初始化实例属性"></a>python中初始化实例属性</h4><p>虽然我们可以自由地给一个实例绑定各种属性，但是，现实世界中，一种类型的实例应该拥有相同名字的属性。<br>特殊的<font color="#ff0000"><strong>init</strong>()</font> 方法：<br>当创建实例时，<strong>init</strong>()方法被自动调用，我们就能在此为每个实例都统一加上属性。</p>
+<p><font color="#ff0000"><strong>init</strong>()</font>  方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别。<br>相应地，创建实例时，就必须要提供除 self 以外的参数。<br>要特别注意的是，初学者定义<strong>init</strong>()方法常常忘记了 self 参数，这会导致创建失败或运行不正常，因为第一个参数被Python解释器传入了实例的引用，从而导致整个方法的调用参数位置全部没有对上。</p>
+<p>定义Person类的<strong>init</strong>方法，除了接受 name、gender 和 birth 外，还可接受任意关键字参数，并把他们都作为属性赋值给实例。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,gender,birth,**kw)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.gender = gender</div><div class="line">        self.birth = birth </div><div class="line">        self.__dict__.update(kw)</div><div class="line"></div><div class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>, job=<span class="string">'Student'</span>,fav =<span class="string">'Football'</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> xiaoming.name</div><div class="line"><span class="keyword">print</span> xiaoming.job</div><div class="line"><span class="keyword">print</span> xiaoming.fav</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h4 id="python中reduce-函数"><a href="#python中reduce-函数" class="headerlink" title="python中reduce()函数"></a>python中reduce()函数</h4><p>reduce()函数也是Python内置的一个高阶函数。reduce()函数接收的参数和 map()类似，一个函数 f，一个list，但行为和 map()不同，reduce()传入的函数 f 必须接收两个参数，reduce()对list的每个元素反复调用函数f，并返回最终结果值。reduce()还可以接收第3个可选参数，作为计算的初始值</p>
-<h5 id="利用reduce-函数来求积"><a href="#利用reduce-函数来求积" class="headerlink" title="利用reduce()函数来求积"></a>利用reduce()函数来求积</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">def prod(x, y):</div><div class="line">    <span class="built_in">return</span> x*y</div><div class="line"></div><div class="line"><span class="built_in">print</span> reduce(prod, [2, 4, 5, 7, 12])</div></pre></td></tr></table></figure>
-<h4 id="python中filter-函数"><a href="#python中filter-函数" class="headerlink" title="python中filter()函数"></a>python中filter()函数</h4><p>filter()函数是 Python 内置的另一个有用的高阶函数，filter()函数接收一个函数 f 和一个list，这个函数 f 的作用是对每个元素进行判断，返回 True或 False，filter()根据判断结果自动过滤掉不符合条件的元素，返回由符合条件元素组成的新list。</p>
-<h5 id="利用filter-过滤出1-100中平方根是整数的数"><a href="#利用filter-过滤出1-100中平方根是整数的数" class="headerlink" title="利用filter()过滤出1~100中平方根是整数的数"></a>利用filter()过滤出1~100中平方根是整数的数</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">import math</div><div class="line">from math import sqrt</div><div class="line"></div><div class="line">def is_sqr(x):</div><div class="line">    <span class="built_in">return</span> sqrt(x)%1 == 0 </div><div class="line"></div><div class="line"><span class="built_in">print</span> filter(is_sqr, range(1, 101))</div></pre></td></tr></table></figure>
-<h4 id="python中自定义排序函数"><a href="#python中自定义排序函数" class="headerlink" title="python中自定义排序函数"></a>python中自定义排序函数</h4><p>Python内置的 sorted()函数可对list进行排序,sorted()也是一个高阶函数，它可以接收一个比较函数来实现自定义排序，比较函数的定义是，传入两个待比较的元素 x, y，如果 x 应该排在 y 的前面，返回 -1，如果 x 应该排在 y 的后面，返回 1。如果 x 和 y 相等，返回 0。</p>
-<h5 id="利用sorted-高阶函数，实现忽略大小写排序的算法"><a href="#利用sorted-高阶函数，实现忽略大小写排序的算法" class="headerlink" title="利用sorted()高阶函数，实现忽略大小写排序的算法"></a>利用sorted()高阶函数，实现忽略大小写排序的算法</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">def cmp_ignore_case(s1, s2):</div><div class="line">    <span class="keyword">if</span> s1.lower() &gt; s2.lower():</div><div class="line">        <span class="built_in">return</span> 1</div><div class="line">    <span class="keyword">if</span> s1.lower() &lt; s2.lower():</div><div class="line">        <span class="built_in">return</span> -1 </div><div class="line">    <span class="built_in">return</span> 0</div><div class="line"></div><div class="line"><span class="built_in">print</span> sorted([<span class="string">'bob'</span>, <span class="string">'about'</span>, <span class="string">'Zoo'</span>, <span class="string">'Credit'</span>], cmp_ignore_case)</div></pre></td></tr></table></figure>
-<h4 id="python中返回函数"><a href="#python中返回函数" class="headerlink" title="python中返回函数"></a>python中返回函数</h4><p>Python的函数不但可以返回int、str、list、dict等数据类型，还可以返回函数！</p>
-<h5 id="编写一个函数calc-prod-lst-，它接收一个list，返回一个函数，返回函数可以计算参数的乘积"><a href="#编写一个函数calc-prod-lst-，它接收一个list，返回一个函数，返回函数可以计算参数的乘积" class="headerlink" title="编写一个函数calc_prod(lst)，它接收一个list，返回一个函数，返回函数可以计算参数的乘积"></a>编写一个函数calc_prod(lst)，它接收一个list，返回一个函数，返回函数可以计算参数的乘积</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">def calc_prod(lst):</div><div class="line">    def prod(x,y):</div><div class="line">        <span class="built_in">return</span> x*y</div><div class="line">    def lazy_calc_prod():</div><div class="line">        <span class="built_in">return</span> reduce(g,lst)</div><div class="line">    <span class="built_in">return</span> lazy_calc_prod</div><div class="line"></div><div class="line">f = calc_prod([1, 2, 3, 4])</div><div class="line"><span class="built_in">print</span> f()</div></pre></td></tr></table></figure>
-<h4 id="python中闭包"><a href="#python中闭包" class="headerlink" title="python中闭包"></a>python中闭包</h4><p>闭包的特点是返回的函数还引用了外层函数的局部变量，所以，要正确使用闭包，<strong>就要确保引用的局部变量在函数返回后不能变。返回函数不要引用任何循环变量，或者后续会发生变化的变量。</strong></p>
-<p>#####希望一次返回3个函数，分别计算1x1,2x2,3x3:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">def count():</div><div class="line">    fs = []</div><div class="line">    for i in range(1, 4):</div><div class="line">        def f(j=i):</div><div class="line">            return j*j</div><div class="line">        fs.append(f)</div><div class="line">    return fs</div><div class="line"></div><div class="line">f1, f2, f3 = count()</div><div class="line">print f1(), f2(), f3()</div></pre></td></tr></table></figure></p>
-<h4 id="python中匿名函数"><a href="#python中匿名函数" class="headerlink" title="python中匿名函数"></a>python中匿名函数</h4><p>高阶函数可以接收函数做参数，有些时候，我们不需要显式地定义函数，直接传入匿名函数更方便。<br>在Python中，对匿名函数提供了有限支持。<br>关键字<font color="#ff0000">lambda</font> 表示匿名函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9])</div><div class="line">[1, 4, 9, 16, 25, 36, 49, 64, 81]</div></pre></td></tr></table></figure></p>
+<h4 id="python中访问限制"><a href="#python中访问限制" class="headerlink" title="python中访问限制"></a>python中访问限制</h4><p>我们可以给一个实例绑定很多属性，如果有些属性不希望被外部访问到怎么办？<br>Python对属性权限的控制是通过属性名来实现的，如果一个属性由双下划线开头<font color="#ff0000">(<strong>)</strong></font>，该属性就无法被外部访问。<br>但是，如果一个属性以”<font color="#ff0000">xxx<strong></strong></font>“的形式定义，那它又可以被外部访问了，以”xxx<strong>“定义的属性在Python的类中被称为特殊属性，有很多预定义的特殊属性可以使用，通常我们不要把普通属性用”</strong>xxx__”定义。<br>以单下划线开头的属性”_xxx”虽然也可以被外部访问，但是，按照习惯，他们不应该被外部访问。</p>
+<p>访问限制举例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, score)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.__score = score</div><div class="line"></div><div class="line">p = Person(<span class="string">'Bob'</span>, <span class="number">59</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> p.name</div><div class="line"><span class="keyword">try</span>:</div><div class="line">    <span class="keyword">print</span> p.__score</div><div class="line"><span class="keyword">except</span> AttributeError:</div><div class="line">    <span class="keyword">print</span> <span class="string">'AttributeError'</span></div></pre></td></tr></table></figure></p>
+<h4 id="python中创建类属性"><a href="#python中创建类属性" class="headerlink" title="python中创建类属性"></a>python中创建类属性</h4><p><b>类是模板，而实例则是根据类创建的对象。</b><br>绑定在一个实例上的属性不会影响其他实例，但是，类本身也是一个对象，如果在类上绑定一个属性，则所有实例都可以访问类的属性，并且，所有实例访问的类属性都是同一个！也就是说：</p>
+<p><font color="#ff0000">实例属性每个实例各自拥有，互相独立，而类属性有且只有一份。</font><br>因为类属性是直接绑定在类上的，所以，访问类属性不需要创建实例，就可以直接访问</p>
+<p>给 Person 类添加一个类属性 count，每创建一个实例，count 属性就加 1，这样就可以统计出一共创建了多少个 Person 的实例。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line">    count = <span class="number">0</span> </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></div><div class="line">        Person.count = Person.count+<span class="number">1</span></div><div class="line">        self.name =name</div><div class="line"></div><div class="line">p1 = Person(<span class="string">'Bob'</span>)</div><div class="line"><span class="keyword">print</span> Person.count</div><div class="line"></div><div class="line">p2 = Person(<span class="string">'Alice'</span>)</div><div class="line"><span class="keyword">print</span> Person.count</div><div class="line"></div><div class="line">p3 = Person(<span class="string">'Tim'</span>)</div><div class="line"><span class="keyword">print</span> Person.count</div></pre></td></tr></table></figure></p>
+<h4 id="python中类属性和实例属性名字冲突怎么办"><a href="#python中类属性和实例属性名字冲突怎么办" class="headerlink" title="python中类属性和实例属性名字冲突怎么办"></a>python中类属性和实例属性名字冲突怎么办</h4><p><font color="#ff0000">当实例属性和类属性重名时，实例属性优先级高</font>，它将屏蔽掉对类属性的访问。<br>可见，千万不要在实例上修改类属性，它实际上并没有修改类属性，而是给实例绑定了一个实例属性。</p>
+<h4 id="python中定义实例方法"><a href="#python中定义实例方法" class="headerlink" title="python中定义实例方法"></a>python中定义实例方法</h4><p>一个实例的私有属性就是以<font color="#ff0000">__</font>开头的属性，无法被外部访问，那这些属性定义有什么用？</p>
+<p><b>实例的方法</b>就是在类中定义的函数，它的第一个参数永远是 <font color="#ff0000">self</font>，指向调用该方法的实例本身，其他参数和一个普通函数是完全一样的。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, score)</span>:</span></div><div class="line">        self.__name = name</div><div class="line">        self.__score = score</div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_grade</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">if</span>(self.__score &gt;= <span class="number">80</span>):</div><div class="line">            <span class="keyword">return</span> <span class="string">'A-优秀'</span></div><div class="line">        <span class="keyword">elif</span>(self.__score &gt;=<span class="number">60</span>):</div><div class="line">            <span class="keyword">return</span> <span class="string">'B-及格'</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="keyword">return</span> <span class="string">'C-不及格'</span></div><div class="line"></div><div class="line">p1 = Person(<span class="string">'Bob'</span>, <span class="number">90</span>)</div><div class="line">p2 = Person(<span class="string">'Alice'</span>, <span class="number">65</span>)</div><div class="line">p3 = Person(<span class="string">'Tim'</span>, <span class="number">48</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> p1.get_grade()</div><div class="line"><span class="keyword">print</span> p2.get_grade()</div><div class="line"><span class="keyword">print</span> p3.get_grade()</div></pre></td></tr></table></figure></p>
 
       
 
@@ -312,7 +308,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/09/25/Python-学习笔记-1/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/09/27/Python-学习笔记-4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -326,18 +322,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/25/Python-学习笔记-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python 学习笔记 2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Setting up SSH for Git on Windows</div>
+    <a href="/2017/09/25/Python-学习笔记-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python 学习笔记 3</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -357,6 +344,19 @@ var _hmt = _hmt || [];
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#python中初始化实例属性"><span class="toc-number">1.</span> <span class="toc-text">python中初始化实例属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中访问限制"><span class="toc-number">2.</span> <span class="toc-text">python中访问限制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中创建类属性"><span class="toc-number">3.</span> <span class="toc-text">python中创建类属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中类属性和实例属性名字冲突怎么办"><span class="toc-number">4.</span> <span class="toc-text">python中类属性和实例属性名字冲突怎么办</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中定义实例方法"><span class="toc-number">5.</span> <span class="toc-text">python中定义实例方法</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -373,6 +373,30 @@ var _hmt = _hmt || [];
   
 
 <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#python中初始化实例属性"><span class="toc-number">1.</span> <span class="toc-text">python中初始化实例属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中访问限制"><span class="toc-number">2.</span> <span class="toc-text">python中访问限制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中创建类属性"><span class="toc-number">3.</span> <span class="toc-text">python中创建类属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中类属性和实例属性名字冲突怎么办"><span class="toc-number">4.</span> <span class="toc-text">python中类属性和实例属性名字冲突怎么办</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python中定义实例方法"><span class="toc-number">5.</span> <span class="toc-text">python中定义实例方法</span></a></li></ol>
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
              
    <!-- 目录内容结束 -->
    
