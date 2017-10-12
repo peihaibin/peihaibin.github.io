@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
-  <title>Python 学习笔记 2 | 个人博客</title>
+  <title>Tag: Shell | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python中编写无参数decorator(装饰器)Python的 decorator 本质上就是一个高阶函数，它接收一个函数作为参数，然后，返回一个新函数。使用 decorator 用Python提供的 @ 语法，这样可以避免手动编写 f = decorate(f) 这样的代码。 编写一个@performance，它可以打印出函数调用的时间。123456789101112131415161718">
-<meta name="keywords" content="python">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python 学习笔记 2">
-<meta property="og:url" content="https://peihaibin.github.io/2017/09/25/Python-学习笔记-2/index.html">
+  <meta name="description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人博客">
+<meta property="og:url" content="https://peihaibin.github.io/tags/Shell/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="python中编写无参数decorator(装饰器)Python的 decorator 本质上就是一个高阶函数，它接收一个函数作为参数，然后，返回一个新函数。使用 decorator 用Python提供的 @ 语法，这样可以避免手动编写 f = decorate(f) 这样的代码。 编写一个@performance，它可以打印出函数调用的时间。123456789101112131415161718">
+<meta property="og:description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-25T09:13:41.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python 学习笔记 2">
-<meta name="twitter:description" content="python中编写无参数decorator(装饰器)Python的 decorator 本质上就是一个高阶函数，它接收一个函数作为参数，然后，返回一个新函数。使用 decorator 用Python提供的 @ 语法，这样可以避免手动编写 f = decorate(f) 这样的代码。 编写一个@performance，它可以打印出函数调用的时间。123456789101112131415161718">
+<meta name="twitter:title" content="个人博客">
+<meta name="twitter:description" content="工作日志，自我管理，知识管理，时间管理，阅读写作，思维导图">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -171,213 +169,77 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python-学习笔记-2" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Python 学习笔记 2
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/10/12/Linux Shell中的变量-预定义变量/" class="archive-article-date">
+  	<time datetime="2017-10-12T01:37:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-12</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/10/12/Linux Shell中的变量-预定义变量/">Linux Shell中的变量-预定义变量</a>
     </h1>
   
 
-        
-        <a href="/2017/09/25/Python-学习笔记-2/" class="archive-article-date">
-  	<time datetime="2017-09-25T05:21:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="python中编写无参数decorator-装饰器"><a href="#python中编写无参数decorator-装饰器" class="headerlink" title="python中编写无参数decorator(装饰器)"></a>python中编写无参数decorator(装饰器)</h4><p>Python的 decorator 本质上就是一个高阶函数，它接收一个函数作为参数，然后，返回一个新函数。<br>使用 decorator 用Python提供的 <font color="#ff0000">@</font> 语法，这样可以避免手动编写<font color="#ff0000"> f = decorate(f) </font>这样的代码。</p>
-<h5 id="编写一个-performance，它可以打印出函数调用的时间。"><a href="#编写一个-performance，它可以打印出函数调用的时间。" class="headerlink" title="编写一个@performance，它可以打印出函数调用的时间。"></a>编写一个@performance，它可以打印出函数调用的时间。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import time</div><div class="line"></div><div class="line">def performance(f):</div><div class="line">    def fn(*args,**kw):</div><div class="line">        ts = time.time()</div><div class="line">        print &apos;call &apos; + f.__name__ +&apos;() in &apos; + str(ts) #time.strftime(&apos;%Y-%m-%d %H-%M-%S&apos;,time.localtime(ts))    </div><div class="line">        f(*args,**kw)</div><div class="line">        te = time.time()</div><div class="line">        print &apos;end &apos; + f.__name__ +&apos;() in &apos; + str(te) #time.strftime(&apos;%Y-%m-%d %H-%M-%S&apos;,time.localtime(ts))    </div><div class="line">        t = te - ts</div><div class="line">        print &apos;run time is &apos; + str(t*1000)[:4] +&apos;ms&apos;</div><div class="line">        return f(*args,**kw)</div><div class="line">    return fn</div><div class="line"></div><div class="line">@performance</div><div class="line">def factorial(n):</div><div class="line">    return reduce(lambda x,y: x*y, range(1, n+1))</div><div class="line"></div><div class="line">print factorial(10)</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h4 id="python中完善decorator"><a href="#python中完善decorator" class="headerlink" title="python中完善decorator"></a>python中完善decorator</h4><p>由于<font color="#ff0000">decorator</font>返回的新函数函数名，这对于那些依赖函数名的代码就会失效。<font color="#ff0000">decorator</font>还改变了函数的<font color="#ff0000"><strong>doc</strong></font>等其它属性。如果要让调用者看不出一个函数经过了<font color="#ff0000">@decorator</font>的“改造”，就需要把原函数的一些属性复制到新函数中；这样写<font color="#ff0000">decorator</font>很不方便，因为我们也很难把原函数的所有必要属性都一个一个复制到新函数上，所以Python内置的<font color="#ff0000">functools</font>可以用来自动化完成这个“复制”的任务；最后需要指出，由于我们把原函数签名改成了<font color="#ff0000">(*args, **kw)</font>，因此，无法获得原函数的原始参数信息。即便我们采用固定参数来装饰只有一个参数的函数。  </p>
-<h4 id="python中偏函数"><a href="#python中偏函数" class="headerlink" title="python中偏函数"></a>python中偏函数</h4><p><font color="#ff0000">functools.partial</font>可以把一个参数多的函数变成一个参数少的新函数，少的参数需要在创建时指定默认值，这样，新函数调用的难度就降低了。  </p>
-<pre><code>import functools
-
-sorted_ignore_case = functools.partial(sorted,key=str.lower)
-
-print sorted_ignore_case([&apos;bob&apos;, &apos;about&apos;, &apos;Zoo&apos;, &apos;Credit&apos;])
-</code></pre>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/wechat.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shell</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
+        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/09/25/Python-学习笔记-2/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/09/25/Python-学习笔记-3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python 学习笔记 3
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/09/25/Python-学习笔记-1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python 学习笔记 1</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
+    
 
-  
 
-  
-
-<!-- 目录内容 -->
-             
-   <!-- 目录内容结束 -->
-   
           </div>
         </div>
       </div>
@@ -407,9 +269,9 @@ print sorted_ignore_case([&apos;bob&apos;, &apos;about&apos;, &apos;Zoo&apos;, &
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
