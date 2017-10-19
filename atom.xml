@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peihaibin.github.io/"/>
-  <updated>2017-10-12T01:38:55.386Z</updated>
+  <updated>2017-10-19T09:09:36.714Z</updated>
   <id>https://peihaibin.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解压序列赋值给多个变量</title>
+    <link href="https://peihaibin.github.io/2017/10/19/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-9/"/>
+    <id>https://peihaibin.github.io/2017/10/19/Python-学习笔记-9/</id>
+    <published>2017-10-19T08:58:03.000Z</published>
+    <updated>2017-10-19T09:09:36.714Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>现在有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？<br><a id="more"></a></p><h5 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h5><p>任何的序列（或者是可迭代对象）可以通过一个简单的赋值语句解压并赋值给多个变量。 唯一的前提就是变量的数量必须跟序列元素的数量是一样的。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = (<span class="number">4</span>, <span class="number">5</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y = p</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line"><span class="number">5</span></div><div class="line">&gt;&gt;&gt;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [ <span class="string">'ACME'</span>, <span class="number">50</span>, <span class="number">91.1</span>, (<span class="number">2012</span>, <span class="number">12</span>, <span class="number">21</span>) ]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, shares, price, date = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'ACME'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>date</div><div class="line">(<span class="number">2012</span>, <span class="number">12</span>, <span class="number">21</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, shares, price, (year, mon, day) = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'ACME'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>year</div><div class="line"><span class="number">2012</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>mon</div><div class="line"><span class="number">12</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>day</div><div class="line"><span class="number">21</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>如果变量个数和序列元素的个数不匹配，会产生一个异常。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = (<span class="number">4</span>, <span class="number">5</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y, z = p</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;pyshell#19&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">    x, y, z = p</div><div class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">3</span>, got <span class="number">2</span>)</div></pre></td></tr></table></figure><h5 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h5><p>实际上，这种解压赋值可以用在任何可迭代对象上面，而不仅仅是列表或者元组。 包括字符串，文件对象，迭代器和生成器。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Hello'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a, b, c, d, e = s</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a</div><div class="line"><span class="string">'H'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>b</div><div class="line"><span class="string">'e'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>e</div><div class="line"><span class="string">'o'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>有时候，你可能只想解压一部分，丢弃其他的值。对于这种情况 Python 并没有提供特殊的语法。 但是你可以使用任意变量名去占位，到时候丢掉这些变量就行了。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [ <span class="string">'ACME'</span>, <span class="number">50</span>, <span class="number">91.1</span>, (<span class="number">2012</span>, <span class="number">12</span>, <span class="number">21</span>) ]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>_, shares, price, _ = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>shares</div><div class="line"><span class="number">50</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>price</div><div class="line"><span class="number">91.1</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>你必须保证你选用的那些占位变量名在其他地方没被使用到。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h4&gt;&lt;p&gt;现在有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Study" scheme="https://peihaibin.github.io/categories/Study/"/>
+    
+    
+      <category term="python" scheme="https://peihaibin.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Shell中的变量-预定义变量</title>
