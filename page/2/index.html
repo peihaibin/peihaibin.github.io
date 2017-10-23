@@ -171,6 +171,292 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python-学习笔记-5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/28/Python-学习笔记-5/">Python 学习笔记 5</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/28/Python-学习笔记-5/" class="archive-article-date">
+  	<time datetime="2017-09-28T01:48:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="python中继承一个类"><a href="#python中继承一个类" class="headerlink" title="python中继承一个类"></a>python中继承一个类</h4><p>一定要用 <font color="#ff0000">super(子类名, self).__init__(父类属性1, 父类属性2) </font>去初始化父类，否则，继承自 <b>父类</b> 的 <b>子类</b> 将没有 <b>父类属性</b>。<br>函数<b>super(子类名, self)</b>将返回当前类继承的父类，然后调用<b>__init__()</b>方法，<br>注意<font color="#ff0000">self参数已在super()中传入，在__init__()中将隐式传递，不需要写出（也不能写）</font>。</p>
+<p>python中继承一个类<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.gender = gender</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span><span class="params">(Person)</span>:</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender, course)</span>:</span></div><div class="line">        super(Teacher,self).__init__(name,gender)</div><div class="line">        self.course = course</div><div class="line"></div><div class="line">t = Teacher(<span class="string">'Alice'</span>, <span class="string">'Female'</span>, <span class="string">'English'</span>)</div><div class="line"><span class="keyword">print</span> t.name</div><div class="line"><span class="keyword">print</span> t.course</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-5/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-5/">展开全文 >></a>
+        </p>
+      
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
+    <article id="post-Python-学习笔记-4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/27/Python-学习笔记-4/">Python 学习笔记 4</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/27/Python-学习笔记-4/" class="archive-article-date">
+  	<time datetime="2017-09-27T07:44:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="python中初始化实例属性"><a href="#python中初始化实例属性" class="headerlink" title="python中初始化实例属性"></a>python中初始化实例属性</h4><p>虽然我们可以自由地给一个实例绑定各种属性，但是，现实世界中，一种类型的实例应该拥有相同名字的属性。<br>特殊的<font color="#ff0000"><strong>init</strong>()</font> 方法：<br>当创建实例时，<strong>init</strong>()方法被自动调用，我们就能在此为每个实例都统一加上属性。</p>
+<p><font color="#ff0000"><strong>init</strong>()</font>  方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别。<br>相应地，创建实例时，就必须要提供除 self 以外的参数。<br>要特别注意的是，初学者定义<strong>init</strong>()方法常常忘记了 self 参数，这会导致创建失败或运行不正常，因为第一个参数被Python解释器传入了实例的引用，从而导致整个方法的调用参数位置全部没有对上。</p>
+<p>定义Person类的<strong>init</strong>方法，除了接受 name、gender 和 birth 外，还可接受任意关键字参数，并把他们都作为属性赋值给实例。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,gender,birth,**kw)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.gender = gender</div><div class="line">        self.birth = birth </div><div class="line">        self.__dict__.update(kw)</div><div class="line"></div><div class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>, job=<span class="string">'Student'</span>,fav =<span class="string">'Football'</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> xiaoming.name</div><div class="line"><span class="keyword">print</span> xiaoming.job</div><div class="line"><span class="keyword">print</span> xiaoming.fav</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017/09/27/Python-学习笔记-4/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/27/Python-学习笔记-4/">展开全文 >></a>
+        </p>
+      
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
+    <article id="post-Python-学习笔记-3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/25/Python-学习笔记-3/">Python 学习笔记 3</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/25/Python-学习笔记-3/" class="archive-article-date">
+  	<time datetime="2017-09-25T08:57:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- MarkdownTOC -->
+<ul>
+<li>python之导入模块</li>
+<li>python中动态导入模块</li>
+<li>python之使用<strong>future</strong></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h4 id="python之导入模块"><a href="#python之导入模块" class="headerlink" title="python之导入模块"></a>python之导入模块</h4><p>Python中的文件既是模块名，而目录就是包名，区分目录和包的方式就是看目录下是否有<font color="#ff0000"><strong>init</strong>.py</font><br>要使用一个模块，我们必须首先导入该模块。Python使用import语句导入一个模块<br>如果我们只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</div></pre></td></tr></table></figure><br>如果使用 <font color="#ff0000">from…import</font> 导入 log 函数，势必引起冲突。这时，可以给函数起个<font color="#ff0000">“别名”</font>来避免冲突：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</div><div class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017/09/25/Python-学习笔记-3/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/25/Python-学习笔记-3/">展开全文 >></a>
+        </p>
+      
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
     <article id="post-Python-学习笔记-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
