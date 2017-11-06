@@ -175,6 +175,219 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-安全-学习笔记-01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/30/安全-学习笔记-01/">汇编命令</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/30/安全-学习笔记-01/" class="archive-article-date">
+  	<time datetime="2017-10-30T08:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><font color="#ff0000">JE</font>   ;等于则跳转</p>
+<p><font color="#ff0000">JNE</font> ;不等于则跳转</p>
+<p><font color="#ff0000">JZ</font>   ;为 0 则跳转</p>
+<p><font color="#ff0000">JNZ</font> ;不为 0 则跳转</p>
+<p><font color="#ff0000">JS</font>   ;为负则跳转</p>
+<p><font color="#ff0000">JNS</font> ;不为负则跳转</p>
+<p><font color="#ff0000">JC</font>   ;进位则跳转</p>
+<p><font color="#ff0000">JNC</font> ;不进位则跳转</p>
+<p><font color="#ff0000">JO</font>   ;溢出则跳转</p>
+<p><font color="#ff0000">JNO</font> ;不溢出则跳转</p>
+<p><font color="#ff0000">JA</font>   ;无符号大于则跳转</p>
+<p><font color="#ff0000">JNA</font> ;无符号不大于则跳转</p>
+<p><font color="#ff0000">JAE</font> ;无符号大于等于则跳转</p>
+<p><font color="#ff0000">JNAE</font> ;无符号不大于等于则跳转</p>
+<p><font color="#ff0000">JG</font>   ;有符号大于则跳转</p>
+<p><font color="#ff0000">JNG</font> ;有符号不大于则跳转</p>
+<p><font color="#ff0000">JGE</font> ;有符号大于等于则跳转</p>
+<p><font color="#ff0000">JNGE</font> ;有符号不大于等于则跳转</p>
+<p><font color="#ff0000">JB</font>   ;无符号小于则跳转</p>
+<p><font color="#ff0000">JNB</font> ;无符号不小于则跳转</p>
+<p><font color="#ff0000">JBE</font> ;无符号小于等于则跳转</p>
+<p><font color="#ff0000">JNBE</font> ;无符号不小于等于则跳转</p>
+<p><font color="#ff0000">JL</font>   ;有符号小于则跳转</p>
+<p><font color="#ff0000">JNL</font> ;有符号不小于则跳转</p>
+<p><font color="#ff0000">JLE</font> ;有符号小于等于则跳转</p>
+<p><font color="#ff0000">JNLE</font> ;有符号不小于等于则跳转</p>
+<p><font color="#ff0000">JP</font>   ;奇偶位置位则跳转</p>
+<p><font color="#ff0000">JNP</font> ;奇偶位清除则跳转</p>
+<p><font color="#ff0000">JPE</font> ;奇偶位相等则跳转</p>
+<p><font color="#ff0000">JPO</font> ;奇偶位不等则跳转</p>
+<p><font color="#ff0000">JMP</font> ;无条件跳转</p>
+<p>mov指令的几种形式：<br>mov  寄存器、  数据<br>mov ax,123<br>mov  寄存器、  寄存器<br>mov bx,ax<br>mov  寄存器、  内存单元<br>mov ax,[0]<br>mov  内存单元、寄存器<br>mov [0],ax<br>mov  段寄存器、寄存器<br>mov ds,ax<br>add和sub指令和mov一样，都有2个操作对象。<br>sub和add类似，不过是相减，<br>sub ax,10    给ax减10，之后的结果赋值给ax<br>sub ax,bx    语意是ax = bx - ax<br>sub ax,[0]   将偏移地址为0的内存单元 - ax 再赋值给ax</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安全</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Security//" class="article-tag-list-link color4">Security</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/30/安全-学习笔记-01/">展开全文 >></a>
+        </p>
+      
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
+    <article id="post-Linux-学习笔记-01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/Linux-学习笔记-01/">Linux Samba服务器配置</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/Linux-学习笔记-01/" class="archive-article-date">
+  	<time datetime="2017-10-23T03:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>Samba 最先在Linxu和windows两个平台之间架起了一座桥梁，正是由于Samba的出现，<br>我们可以在Linux和windows之间互相通信，比如拷贝文件、实现不同操作系统之间的资源共享等等，<br>我们可以将其架设成功能非常强大的文件服务器，也可以将其架设成打印服务器提供本地和远程联机打印。</p>
+        
+          <a class="article-more-a" href="/2017/10/23/Linux-学习笔记-01/#more">阅读全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/23/Linux-学习笔记-01/">展开全文 >></a>
+        </p>
+      
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+<!-- 目录内容 -->
+             
+   <!-- 目录内容结束 -->
+   
+  
     <article id="post-Python-学习笔记-13" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -925,193 +1138,6 @@ var _hmt = _hmt || [];
    <!-- 目录内容结束 -->
    
   
-    <article id="post-Python-学习笔记-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/28/Python-学习笔记-7/">Python 学习笔记 7</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/28/Python-学习笔记-7/" class="archive-article-date">
-  	<time datetime="2017-09-28T07:23:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="python输入"><a href="#python输入" class="headerlink" title="python输入"></a>python输入</h4><p>如果要让用户从电脑输入一些字符怎么办？Python提供了一个raw_input，可以让用户输入字符串，并存放到一个变量里。<br>当你输入name = raw_input()并按下回车后，Python交互式命令行就在等待你的输入了。这时，你可以输入任意字符，然后按回车后完成输入。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>name = raw_input()</div><div class="line">Michael</div></pre></td></tr></table></figure>
-<p>raw_input可以让你显示一个字符串来提示用户，于是我们把代码改成：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">name = raw_input(<span class="string">'please enter your name: '</span>)</div><div class="line"><span class="keyword">print</span> <span class="string">'hello,'</span>, name</div></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-7/#more">阅读全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-7/">展开全文 >></a>
-        </p>
-      
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-<!-- 目录内容 -->
-             
-   <!-- 目录内容结束 -->
-   
-  
-    <article id="post-Python-学习笔记-6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/28/Python-学习笔记-6/">Python 学习笔记 6</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/28/Python-学习笔记-6/" class="archive-article-date">
-  	<time datetime="2017-09-28T05:20:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="python中数学运算"><a href="#python中数学运算" class="headerlink" title="python中数学运算"></a>python中数学运算</h4><p>Python 提供的基本数据类型 <strong>int、float</strong> 可以做整数和浮点的四则运算以及乘方等运算。<br>但是，四则运算不局限于int和float，还可以是有理数、矩阵等。<br>要表示有理数，可以用一个<strong>Rational</strong>类来表示：<br>如果要让<strong>Rational</strong>进行<strong>+运算</strong>，需要正确实现__add__。</p>
-<p>请继续完善Rational类，实现四则运算。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#--*-- coding=utf-8 --*--</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Rational</span><span class="params">(object)</span>:</span>  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">gcd</span><span class="params">(self,a,b)</span>:</span></div><div class="line">        <span class="keyword">while</span> b:</div><div class="line">            a,b=b,a%b</div><div class="line">        <span class="keyword">return</span> a</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, p, q)</span>:</span></div><div class="line">        self.p = p/self.gcd(p,q)</div><div class="line">        self.q = q/self.gcd(p,q)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__add__</span><span class="params">(self, r)</span>:</span></div><div class="line">        <span class="keyword">return</span> Rational(self.p * r.q + self.q * r.p, self.q * r.q)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__sub__</span><span class="params">(self, r)</span>:</span></div><div class="line">        <span class="keyword">return</span> Rational(self.p*r.q - self.q * r.p, self.q * r.q)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__mul__</span><span class="params">(self, r)</span>:</span></div><div class="line">        <span class="keyword">return</span> Rational(self.p*r.p,self.q*r.q)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__div__</span><span class="params">(self, r)</span>:</span></div><div class="line">        <span class="keyword">if</span> self.q*r.p == <span class="number">0</span>:a</div><div class="line">            <span class="keyword">return</span> <span class="string">'error'</span></div><div class="line">        <span class="keyword">return</span> Rational(self.p*r.q,self.q*r.p)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">return</span> <span class="string">'%s/%s'</span> % (self.p, self.q)</div><div class="line">    __repr__ = __str__</div><div class="line">      </div><div class="line">r1 = Rational(<span class="number">1</span>, <span class="number">2</span>)</div><div class="line">r2 = Rational(<span class="number">1</span>, <span class="number">4</span>)</div><div class="line"><span class="keyword">print</span> r1 + r2</div><div class="line"><span class="keyword">print</span> r1 - r2</div><div class="line"><span class="keyword">print</span> r1 * r2</div><div class="line"><span class="keyword">print</span> r1 / r2</div></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-6/#more">阅读全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Study//" class="article-tag-list-link color1">Study</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/28/Python-学习笔记-6/">展开全文 >></a>
-        </p>
-      
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-<!-- 目录内容 -->
-             
-   <!-- 目录内容结束 -->
-   
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1260,6 +1286,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">安全</a>
               </li>
             
             <div class="clearfix"></div>

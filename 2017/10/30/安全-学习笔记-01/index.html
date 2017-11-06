@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
-  <title>Hello World | 个人博客</title>
+  <title>汇编命令 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="JE   ;等于则跳转 JNE ;不等于则跳转 JZ   ;为 0 则跳转 JNZ ;不为 0 则跳转 JS   ;为负则跳转 JNS ;不为负则跳转 JC   ;进位则跳转 JNC ;不进位则跳转 JO   ;溢出则跳转 JNO ;不溢出则跳转 JA   ;无符号大于则跳转 JNA ;无符号不大于则跳转 JAE ;无符号大于等于则跳转 JNAE ;无符号不大于等于则跳转 JG   ;有符号大于则">
+<meta name="keywords" content="安全">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://peihaibin.github.io/2017/09/21/hello-world/index.html">
+<meta property="og:title" content="汇编命令">
+<meta property="og:url" content="https://peihaibin.github.io/2017/10/30/安全-学习笔记-01/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="JE   ;等于则跳转 JNE ;不等于则跳转 JZ   ;为 0 则跳转 JNZ ;不为 0 则跳转 JS   ;为负则跳转 JNS ;不为负则跳转 JC   ;进位则跳转 JNC ;不进位则跳转 JO   ;溢出则跳转 JNO ;不溢出则跳转 JA   ;无符号大于则跳转 JNA ;无符号不大于则跳转 JAE ;无符号大于等于则跳转 JNAE ;无符号不大于等于则跳转 JG   ;有符号大于则">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-25T09:42:47.677Z">
+<meta property="og:updated_time" content="2017-10-30T08:24:59.374Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="汇编命令">
+<meta name="twitter:description" content="JE   ;等于则跳转 JNE ;不等于则跳转 JZ   ;为 0 则跳转 JNZ ;不为 0 则跳转 JS   ;为负则跳转 JNS ;不为负则跳转 JC   ;进位则跳转 JNC ;不进位则跳转 JO   ;溢出则跳转 JNO ;不溢出则跳转 JA   ;无符号大于则跳转 JNA ;无符号不大于则跳转 JAE ;无符号大于等于则跳转 JNAE ;无符号不大于等于则跳转 JG   ;有符号大于则">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -174,36 +175,58 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-安全-学习笔记-01" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      汇编命令
     </h1>
   
 
         
-        <a href="/2017/09/21/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-21T04:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-21</time>
+        <a href="/2017/10/30/安全-学习笔记-01/" class="archive-article-date">
+  	<time datetime="2017-10-30T08:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-   <a id="more"></a>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><font color="#ff0000">JE</font>   ;等于则跳转</p>
+<p><font color="#ff0000">JNE</font> ;不等于则跳转</p>
+<p><font color="#ff0000">JZ</font>   ;为 0 则跳转</p>
+<p><font color="#ff0000">JNZ</font> ;不为 0 则跳转</p>
+<p><font color="#ff0000">JS</font>   ;为负则跳转</p>
+<p><font color="#ff0000">JNS</font> ;不为负则跳转</p>
+<p><font color="#ff0000">JC</font>   ;进位则跳转</p>
+<p><font color="#ff0000">JNC</font> ;不进位则跳转</p>
+<p><font color="#ff0000">JO</font>   ;溢出则跳转</p>
+<p><font color="#ff0000">JNO</font> ;不溢出则跳转</p>
+<p><font color="#ff0000">JA</font>   ;无符号大于则跳转</p>
+<p><font color="#ff0000">JNA</font> ;无符号不大于则跳转</p>
+<p><font color="#ff0000">JAE</font> ;无符号大于等于则跳转</p>
+<p><font color="#ff0000">JNAE</font> ;无符号不大于等于则跳转</p>
+<p><font color="#ff0000">JG</font>   ;有符号大于则跳转</p>
+<p><font color="#ff0000">JNG</font> ;有符号不大于则跳转</p>
+<p><font color="#ff0000">JGE</font> ;有符号大于等于则跳转</p>
+<p><font color="#ff0000">JNGE</font> ;有符号不大于等于则跳转</p>
+<p><font color="#ff0000">JB</font>   ;无符号小于则跳转</p>
+<p><font color="#ff0000">JNB</font> ;无符号不小于则跳转</p>
+<p><font color="#ff0000">JBE</font> ;无符号小于等于则跳转</p>
+<p><font color="#ff0000">JNBE</font> ;无符号不小于等于则跳转</p>
+<p><font color="#ff0000">JL</font>   ;有符号小于则跳转</p>
+<p><font color="#ff0000">JNL</font> ;有符号不小于则跳转</p>
+<p><font color="#ff0000">JLE</font> ;有符号小于等于则跳转</p>
+<p><font color="#ff0000">JNLE</font> ;有符号不小于等于则跳转</p>
+<p><font color="#ff0000">JP</font>   ;奇偶位置位则跳转</p>
+<p><font color="#ff0000">JNP</font> ;奇偶位清除则跳转</p>
+<p><font color="#ff0000">JPE</font> ;奇偶位相等则跳转</p>
+<p><font color="#ff0000">JPO</font> ;奇偶位不等则跳转</p>
+<p><font color="#ff0000">JMP</font> ;无条件跳转</p>
+<p>mov指令的几种形式：<br>mov  寄存器、  数据<br>mov ax,123<br>mov  寄存器、  寄存器<br>mov bx,ax<br>mov  寄存器、  内存单元<br>mov ax,[0]<br>mov  内存单元、寄存器<br>mov [0],ax<br>mov  段寄存器、寄存器<br>mov ds,ax<br>add和sub指令和mov一样，都有2个操作对象。<br>sub和add类似，不过是相减，<br>sub ax,10    给ax减10，之后的结果赋值给ax<br>sub ax,bx    语意是ax = bx - ax<br>sub ax,[0]   将偏移地址为0的内存单元 - ax 再赋值给ax</p>
 
       
 
@@ -243,7 +266,29 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安全</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Security//" class="article-tag-list-link color4">Security</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
       <span id="busuanzi_container_page_pv">
@@ -295,7 +340,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/09/21/hello-world/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peihaibin.github.io/2017/10/30/安全-学习笔记-01/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,15 +354,11 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/22/Setting-up-SSH-for-Git-on-Windows/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Setting up SSH for Git on Windows
-        
-      </div>
-    </a>
   
+    <a href="/2017/10/23/Linux-学习笔记-01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux Samba服务器配置</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

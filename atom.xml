@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peihaibin.github.io/"/>
-  <updated>2017-10-23T02:40:43.669Z</updated>
+  <updated>2017-10-30T08:24:59.374Z</updated>
   <id>https://peihaibin.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>汇编命令</title>
+    <link href="https://peihaibin.github.io/2017/10/30/%E5%AE%89%E5%85%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-01/"/>
+    <id>https://peihaibin.github.io/2017/10/30/安全-学习笔记-01/</id>
+    <published>2017-10-30T08:10:00.000Z</published>
+    <updated>2017-10-30T08:24:59.374Z</updated>
+    
+    <content type="html"><![CDATA[<p><font color="#ff0000">JE</font>   ;等于则跳转</p><p><font color="#ff0000">JNE</font> ;不等于则跳转</p><p><font color="#ff0000">JZ</font>   ;为 0 则跳转</p><p><font color="#ff0000">JNZ</font> ;不为 0 则跳转</p><p><font color="#ff0000">JS</font>   ;为负则跳转</p><p><font color="#ff0000">JNS</font> ;不为负则跳转</p><p><font color="#ff0000">JC</font>   ;进位则跳转</p><p><font color="#ff0000">JNC</font> ;不进位则跳转</p><p><font color="#ff0000">JO</font>   ;溢出则跳转</p><p><font color="#ff0000">JNO</font> ;不溢出则跳转</p><p><font color="#ff0000">JA</font>   ;无符号大于则跳转</p><p><font color="#ff0000">JNA</font> ;无符号不大于则跳转</p><p><font color="#ff0000">JAE</font> ;无符号大于等于则跳转</p><p><font color="#ff0000">JNAE</font> ;无符号不大于等于则跳转</p><p><font color="#ff0000">JG</font>   ;有符号大于则跳转</p><p><font color="#ff0000">JNG</font> ;有符号不大于则跳转</p><p><font color="#ff0000">JGE</font> ;有符号大于等于则跳转</p><p><font color="#ff0000">JNGE</font> ;有符号不大于等于则跳转</p><p><font color="#ff0000">JB</font>   ;无符号小于则跳转</p><p><font color="#ff0000">JNB</font> ;无符号不小于则跳转</p><p><font color="#ff0000">JBE</font> ;无符号小于等于则跳转</p><p><font color="#ff0000">JNBE</font> ;无符号不小于等于则跳转</p><p><font color="#ff0000">JL</font>   ;有符号小于则跳转</p><p><font color="#ff0000">JNL</font> ;有符号不小于则跳转</p><p><font color="#ff0000">JLE</font> ;有符号小于等于则跳转</p><p><font color="#ff0000">JNLE</font> ;有符号不小于等于则跳转</p><p><font color="#ff0000">JP</font>   ;奇偶位置位则跳转</p><p><font color="#ff0000">JNP</font> ;奇偶位清除则跳转</p><p><font color="#ff0000">JPE</font> ;奇偶位相等则跳转</p><p><font color="#ff0000">JPO</font> ;奇偶位不等则跳转</p><p><font color="#ff0000">JMP</font> ;无条件跳转</p><p>mov指令的几种形式：<br>mov  寄存器、  数据<br>mov ax,123<br>mov  寄存器、  寄存器<br>mov bx,ax<br>mov  寄存器、  内存单元<br>mov ax,[0]<br>mov  内存单元、寄存器<br>mov [0],ax<br>mov  段寄存器、寄存器<br>mov ds,ax<br>add和sub指令和mov一样，都有2个操作对象。<br>sub和add类似，不过是相减，<br>sub ax,10    给ax减10，之后的结果赋值给ax<br>sub ax,bx    语意是ax = bx - ax<br>sub ax,[0]   将偏移地址为0的内存单元 - ax 再赋值给ax</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font color=&quot;#ff0000&quot;&gt;JE&lt;/font&gt;   ;等于则跳转&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#ff0000&quot;&gt;JNE&lt;/font&gt; ;不等于则跳转&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#ff0000&quot;&gt;JZ&lt;/font&gt;   ;为 0 则跳
+      
+    
+    </summary>
+    
+      <category term="Security" scheme="https://peihaibin.github.io/categories/Security/"/>
+    
+    
+      <category term="安全" scheme="https://peihaibin.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Samba服务器配置</title>
+    <link href="https://peihaibin.github.io/2017/10/23/Linux-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-01/"/>
+    <id>https://peihaibin.github.io/2017/10/23/Linux-学习笔记-01/</id>
+    <published>2017-10-23T03:10:00.000Z</published>
+    <updated>2017-10-23T05:48:23.407Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>Samba 最先在Linxu和windows两个平台之间架起了一座桥梁，正是由于Samba的出现，<br>我们可以在Linux和windows之间互相通信，比如拷贝文件、实现不同操作系统之间的资源共享等等，<br>我们可以将其架设成功能非常强大的文件服务器，也可以将其架设成打印服务器提供本地和远程联机打印。</p><a id="more"></a><h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4><font color="#ff00ff">文件和打印机共享</font>：文件和打印机共享是Samba的主要功能，SMB进程实现资源共享，<br>将文件和打印机发布到网络中，以供用户访问。<br><font color="#ff00ff">身份验证和权限设置</font>：smbd服务支持user mode和domain mode等身份验证和权限设置模式，<br>通过加密方式可以保护共享的文件和打印机。<br>端口号：<font color="#ff0000"> 139 和 445</font><p>在早期，SMB运行于NBT协议（NetBIOS over TCP/IP)上，使用UDP协议的137、138和TCP协议的139端口<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">netbios-ns      137/tcp                         <span class="comment"># NETBIOS Name Service</span></div><div class="line">netbios-ns      137/udp</div><div class="line">netbios-dgm     138/tcp                         <span class="comment"># NETBIOS Datagram Service</span></div><div class="line">netbios-dgm     138/udp</div><div class="line">netbios-ssn     139/tcp                         <span class="comment"># NETBIOS session service</span></div><div class="line">netbios-ssn     139/udp</div></pre></td></tr></table></figure></p><p>NETBIOS 协议<br>NetBIOS 是Network Basic Input/Output System 简称，网络基本输入/输出系统协议，是由IBM公司开发的。<br>主要作用是：通过NetBIOS协议获取计算机名，然后把计算机名解析为对应的IP地址。</p><h4 id="安装Samba"><a href="#安装Samba" class="headerlink" title="安装Samba"></a>安装Samba</h4><p>服务器端：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ rpm -ivh /mnt/Packages/samba-4.6.2-8.el7.x86_64.rpm</div></pre></td></tr></table></figure></p><p>客户端：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ rpm -ivh /mnt/Packages/samba-client-4.6.2-8.el7.x86_64.rpm</div></pre></td></tr></table></figure></p><p>配置文件位置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ vim /etc/samba/smb.conf</div></pre></td></tr></table></figure></p><p>服务器的启动和关闭<br>1:启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ sudo systemctl start smb.service</div></pre></td></tr></table></figure></p><p>2:关闭<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ sudo systemctl stop smb.service</div></pre></td></tr></table></figure></p><p>3:重启<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ sudo systemctl restart smb.service</div></pre></td></tr></table></figure></p><p>4:服务当前状态<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ systemctl status smb.service </div><div class="line">● smb.service - Samba SMB Daemon</div><div class="line">   Loaded: loaded (/usr/lib/systemd/system/smb.service; disabled; vendor preset: disabled)</div><div class="line">   Active: active (running) since 一 2017-10-23 11:46:26 CST; 18s ago</div><div class="line"> Main PID: 111351 (smbd)</div><div class="line">   Status: <span class="string">"smbd: ready to serve connections..."</span></div><div class="line">   CGroup: /system.slice/smb.service</div><div class="line">           ├─111351 /usr/sbin/smbd</div><div class="line">           ├─111352 /usr/sbin/smbd</div><div class="line">           ├─111353 /usr/sbin/smbd</div><div class="line">           └─111354 /usr/sbin/smbd</div><div class="line"></div><div class="line">10月 23 11:46:26 localhost.localdomain systemd[1]: Starting Samba SMB Daemon...</div><div class="line">10月 23 11:46:26 localhost.localdomain systemd[1]: smb.service: Supervising proces....</div><div class="line">10月 23 11:46:26 localhost.localdomain smbd[111351]: [2017/10/23 11:46:26.792163, ...)</div><div class="line">10月 23 11:46:26 localhost.localdomain smbd[111351]:   STATUS=daemon <span class="string">'smbd'</span> finish...s</div><div class="line">10月 23 11:46:26 localhost.localdomain systemd[1]: Started Samba SMB Daemon.</div><div class="line">Hint: Some lines were ellipsized, use -l to show <span class="keyword">in</span> full.</div></pre></td></tr></table></figure></p><p>如果当前服务正在运行，如何不重启服务，加载新的配置文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ systemctl reload smb.service</div></pre></td></tr></table></figure></p><p>开启启动服务：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ systemctl <span class="built_in">enable</span> smb.service</div></pre></td></tr></table></figure></p><p>查看端口号：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ sudo netstat -anutp|grep smb</div><div class="line">[sudo] hniois 的密码：</div><div class="line">tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      111351smbd         </div><div class="line">tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      111351smbd         </div><div class="line">tcp6       0      0 :::139                  :::*                    LISTEN      111351smbd         </div><div class="line">tcp6       0      0 :::445                  :::*                    LISTEN      111351smbd         </div><div class="line">[hniois@localhost ~]$</div></pre></td></tr></table></figure></p><h4 id="访问Samba服务"><a href="#访问Samba服务" class="headerlink" title="访问Samba服务"></a>访问Samba服务</h4><p>windows:<br>通过 \IP地址 来访问</p><p>Linux：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hniois@localhost ~]$ smbclient -L IP地址</div></pre></td></tr></table></figure></p><h4 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h4><p>基本的Samba服务器搭建流程主要分为四个步骤：<br>[1]、编辑主配置文件smb.conf,制定需要共享的目录，并为共享目录设置共享权限。<br>[2]、在smb.conf 文件中指定日志文件名称和存放路径。<br>[3]、设置共享目录的本地系统权限及samba共享权限。<br>[4]、重新加载配置文件或重新启动smb服务，使配置生效。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h4&gt;&lt;p&gt;Samba 最先在Linxu和windows两个平台之间架起了一座桥梁，正是由于Samba的出现，&lt;br&gt;我们可以在Linux和windows之间互相通信，比如拷贝文件、实现不同操作系统之间的资源共享等等，&lt;br&gt;我们可以将其架设成功能非常强大的文件服务器，也可以将其架设成打印服务器提供本地和远程联机打印。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://peihaibin.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://peihaibin.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>字典中的键映射多个值</title>
