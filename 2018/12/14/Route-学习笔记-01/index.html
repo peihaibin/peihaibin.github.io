@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
   <title>路由表加载 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
+  <meta name="description" content="概述#####路由表的加载 （1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优">
 <meta name="keywords" content="Route">
 <meta property="og:type" content="article">
 <meta property="og:title" content="路由表加载">
 <meta property="og:url" content="https://peihaibin.github.io/2018/12/14/Route-学习笔记-01/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
+<meta property="og:description" content="概述#####路由表的加载 （1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-14T06:44:53.117Z">
+<meta property="og:updated_time" content="2018-12-14T07:43:25.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="路由表加载">
-<meta name="twitter:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
+<meta name="twitter:description" content="概述#####路由表的加载 （1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -201,11 +201,28 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p>
+        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>#####路由表的加载</p>
+<p>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p>
 <font color="ff0000">先比优先级，再比Metric</font>
 
 <p>（2）不同的路由（掩码长度不一致）<br>全都放入路由表中</p>
-<p><font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br><a id="more"></a></p>
+<font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br><a id="more"></a><br><br>#####数据包的选路<br><br>掩码最长匹配原则<br><br>2.2.2.0 24 static 60 0 13.1.1.3<br>2.2.2.2 32 static 200 0 12.1.1.2<br>通往2.2.2.2 的数据包优先通过12.1.1.2 路由发送出去。<br><br><br><br>#####路由汇总问题<br><br>明细网络号写成2进制，然后从左边最高位数起，明细网络号有多少bit是一致的，就是掩码位数。<br><br>172.168.12.0/24<br>172.168.13.0/24<br>172.168.14.0/24<br>172.168.15.0/24<br><br>最左边2个8位都是一致的，共16bit。<br>后面12 13 14 15 用2进制表示如下<br>128    64     32    16    8   4   2   1<br>0       0     0      0    1   1   0   0  12<br>0       0     0      0    1   1   0   1  13<br>0       0     0      0    1   1   1   0  14<br>0       0     0      0    1   1   1   1  15<br><br>相同bit位为6为，加上前面的16bit一共是22位bit一致。子网掩码就是22<br><br>汇总起始的网络号算法：<br>明细网络号有多少bit是一致的为分界，后面全部置为0，就是网络起始号。<br><br>上面的路由汇总就应该是172.168.12.0/22<br><br><font color="ff0000">汇总网络个数为2的多少次幂个。</font>
+
+<font color="ff0000">不精确的路由汇总可能产生路由黑洞，进而可能产生环路问题。</font>
+
+<p>#####路由分类<br>1.工作方式<br>静态路由<br>动态路由</p>
+<p>2.工作位置<br>AS (自治系统)<br>一个逻辑管理域1-65535</p>
+<p>IGP（内部网关协议）：运行在一个AS内部的路由选择协议<br>RIP、OSPF、ISIS</p>
+<p>EGP（外部网关协议）：运行在AS与AS之间的路由选择协议。BGP（边界网关协议）</p>
+<p>3.对网络的认识 </p>
+<p>DV（distance vector距离矢量）：<br>只知道目的网络号的大概远近和方向<br>routing by romor （听信谣言），<br>依赖直连路由告诉我的路由信息来做选路判断，容易产生环路。<br>水平分割原则（缓解）：从本端口发出去的路由，不再由本端口学习。<br>RIP、BGP</p>
+<p>LS（link state链路状态）：自主计算去往目标网络号的路径（SPF算法），不会形成环路。</p>
+<p>OSPF：<br>区域内（SPF算法–LS 100%无环）<br>区域间（DV）</p>
+<p>DV与LS的本质区别：<br>DV： 只知道自己直连路由器的方位<br>LS： 能知道全网的拓扑结构  ——区域内</p>
+<p>4.传递路由的精确性、准确性：<br>（1）有类别（classful）：发送路由更新时不携带子网掩码信息，不精确 ripv1<br>（2） 无类别（classless）：发送路由更新时携带子网掩码信息，精确 ripv2、ospf、isis、BGP</p>
+<p>OSI模型</p>
+<p>七   应用层        telnet      ssh<br>          端口号     23         22<br>四   传输层       TCP        UDP       ICMP    OSPF         （端口号反映7层协议）<br>            协议号  6           17        1     89<br>三    网络层        ipv4      ipv6  （协议号反映四层协议）<br>             type   0X0080    0X86DD<br>二    数据链路层   type字段反映三层协议</p>
+<p>ICMP、OSPF直接封装进三层IP包的，没有经过传输层封装。</p>
 
       
 

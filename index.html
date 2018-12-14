@@ -201,11 +201,12 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p>
+        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>#####路由表的加载</p>
+<p>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p>
 <font color="ff0000">先比优先级，再比Metric</font>
 
 <p>（2）不同的路由（掩码长度不一致）<br>全都放入路由表中</p>
-<p><font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br>
+<font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br>
         
           <a class="article-more-a" href="/2018/12/14/Route-学习笔记-01/#more">阅读全文 >></a>
         
