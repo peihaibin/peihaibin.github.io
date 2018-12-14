@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://peihaibin.github.io">
   <title>路由表加载 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）先比优先级，再比Metric （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不同种">
+  <meta name="description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
 <meta name="keywords" content="Route">
 <meta property="og:type" content="article">
 <meta property="og:title" content="路由表加载">
 <meta property="og:url" content="https://peihaibin.github.io/2018/12/14/Route-学习笔记-01/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）先比优先级，再比Metric （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不同种">
+<meta property="og:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-14T03:36:32.724Z">
+<meta property="og:updated_time" content="2018-12-14T06:44:53.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="路由表加载">
-<meta name="twitter:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）先比优先级，再比Metric （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不同种">
+<meta name="twitter:description" content="概述路由表的加载（1）对于同一条路由（掩码长度一致）1.优先级和Metric都一样，都放入路由表中，执行负载均衡2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由） 先比优先级，再比Metric  （2）不同的路由（掩码长度不一致）全都放入路由表中     优先级：区分不">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -201,7 +201,9 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）<br>先比优先级，再比Metric</p>
+        <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p>
+<font color="ff0000">先比优先级，再比Metric</font>
+
 <p>（2）不同的路由（掩码长度不一致）<br>全都放入路由表中</p>
 <p><font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br><a id="more"></a></p>
 
@@ -529,11 +531,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">XShell</a>
+                <a href="javascript:void(0)" class="js-tag color1">Route</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -545,11 +555,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color2">XShell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -558,10 +564,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">视频会议</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Route</a>
               </li>
             
             <div class="clearfix"></div>

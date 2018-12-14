@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peihaibin.github.io/"/>
-  <updated>2018-12-14T03:36:32.724Z</updated>
+  <updated>2018-12-14T06:44:53.117Z</updated>
   <id>https://peihaibin.github.io/</id>
   
   <author>
@@ -21,13 +21,15 @@
     <link href="https://peihaibin.github.io/2018/12/14/Route-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-01/"/>
     <id>https://peihaibin.github.io/2018/12/14/Route-学习笔记-01/</id>
     <published>2018-12-14T02:57:00.000Z</published>
-    <updated>2018-12-14T03:36:32.724Z</updated>
+    <updated>2018-12-14T06:44:53.117Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）<br>先比优先级，再比Metric</p><p>（2）不同的路由（掩码长度不一致）<br>全都放入路由表中</p><p><font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>路由表的加载<br>（1）对于同一条路由（掩码长度一致）<br>1.优先级和Metric都一样，都放入路由表中，执行负载均衡<br>2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）<br>3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）</p><font color="ff0000">先比优先级，再比Metric</font><p>（2）不同的路由（掩码长度不一致）<br>全都放入路由表中</p><p><font color="#ff00ff"><br>    优先级：区分不同种路由协议之间的可信度（越小可信度越高）<br>    Metric：区分同种路由协议的可信度（越小可信度越高）<br></font><br><a id="more"></a></p>]]></content>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h4&gt;&lt;p&gt;路由表的加载&lt;br&gt;（1）对于同一条路由（掩码长度一致）&lt;br&gt;1.优先级和Metric都一样，都放入路由表中，执行负载均衡&lt;br&gt;2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）&lt;br&gt;3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）&lt;br&gt;先比优先级，再比Metric&lt;/p&gt;
+      &lt;h4 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h4&gt;&lt;p&gt;路由表的加载&lt;br&gt;（1）对于同一条路由（掩码长度一致）&lt;br&gt;1.优先级和Metric都一样，都放入路由表中，执行负载均衡&lt;br&gt;2.优先级不同，只将优先级小的路由放入路由表中（优先级大的作为备份路由）&lt;br&gt;3.优先级相同，metric不同，路由表中只存放metric值小的路由（metric值大的路由作为备份路由）&lt;/p&gt;
+&lt;font color=&quot;ff0000&quot;&gt;先比优先级，再比Metric&lt;/font&gt;
+
 &lt;p&gt;（2）不同的路由（掩码长度不一致）&lt;br&gt;全都放入路由表中&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;#ff00ff&quot;&gt;&lt;br&gt;    优先级：区分不同种路由协议之间的可信度（越小可信度越高）&lt;br&gt;    Metric：区分同种路由协议的可信度（越小可信度越高）&lt;br&gt;&lt;/font&gt;&lt;br&gt;
     
@@ -387,9 +389,9 @@
       <category term="Linux" scheme="https://peihaibin.github.io/categories/Linux/"/>
     
     
-      <category term="XShell" scheme="https://peihaibin.github.io/tags/XShell/"/>
-    
       <category term="Linux" scheme="https://peihaibin.github.io/tags/Linux/"/>
+    
+      <category term="XShell" scheme="https://peihaibin.github.io/tags/XShell/"/>
     
   </entry>
   
